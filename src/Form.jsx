@@ -11,7 +11,11 @@ const Form = () => {
       lastName,
     } = e.target
 
-    setFormValues({ name: name.value, lastName: lastName.value, fullName: `${name.value} ${lastName.value}` })
+    setFormValues({
+      name: name.value,
+      lastName: lastName.value,
+      fullName: `${name.value} ${lastName.value}`,
+    })
   }
 
   return (
@@ -35,7 +39,9 @@ const Form = () => {
           <input type='text' name='lastName' />
         </label>
 
-        <button>Submit</button>
+        <button id='submit'>Submit</button>
+
+        <input id='reset' type='reset' />
       </form>
     </>
   )
