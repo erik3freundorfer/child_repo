@@ -20,14 +20,6 @@ const Form = () => {
 
   return (
     <>
-      <h2>dank</h2>
-
-      <pre>
-        <code>
-          {JSON.stringify(formValues)}
-        </code>
-      </pre>
-
       <form onSubmit={handleSubmit}>
         <label htmlFor='name'>
           <span>Name</span>
