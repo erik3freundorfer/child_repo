@@ -20,8 +20,6 @@ const Form = () => {
 
   return (
     <>
-      <h2>dank</h2>
-
       <pre>
         <code>
           {JSON.stringify(formValues)}
